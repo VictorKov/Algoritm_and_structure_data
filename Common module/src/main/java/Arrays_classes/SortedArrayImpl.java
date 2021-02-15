@@ -1,3 +1,5 @@
+package Arrays_classes;
+
 public class SortedArrayImpl<E extends Comparable<? super E>> extends ArrayImpl<E> {
 
     public SortedArrayImpl() {

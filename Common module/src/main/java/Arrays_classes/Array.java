@@ -1,3 +1,5 @@
+package Arrays_classes;
+
 public interface Array<E> {
 
     void add(E value);

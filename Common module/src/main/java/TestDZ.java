@@ -1,4 +1,6 @@
-import java.util.ArrayList;
+import Arrays_classes.Array;
+import Arrays_classes.ArrayImpl;
+
 import java.util.Random;
 
 public class TestDZ {
