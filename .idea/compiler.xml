@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Lesson1" />
-        <module name="Common module" />
+        <module name="commonModul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Common module" target="15" />
       <module name="Lesson3" target="15" />
     </bytecodeTargetLevel>
   </component>
