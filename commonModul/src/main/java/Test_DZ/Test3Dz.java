@@ -1,9 +1,11 @@
-package StackAndQueue.deque;
+package Test_DZ;
 
+import StackAndQueue.deque.Deque;
+import StackAndQueue.deque.DequeImpl;
 import StackAndQueue.stack.IStack;
 import StackAndQueue.stack.StackImpl;
 
-public class TestDz {
+public class Test3Dz {
     public static void main(String[] args) {
 
         //TASK 1
