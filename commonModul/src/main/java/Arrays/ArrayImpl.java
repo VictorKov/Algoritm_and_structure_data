@@ -1,4 +1,4 @@
-package Arrays_classes;
+package Arrays;
 
 import java.util.Arrays;
 
@@ -167,7 +167,7 @@ public class ArrayImpl<E extends Comparable<? super E>> implements Array<E> {
 
     @Override
     public Array<E> copy() {
-        ArrayImpl<E> array = new ArrayImpl<>(size);
+        ArrayImpl<E> array = new ArrayImpl<E>(size);
         array.size = size;
         array.data = Arrays.copyOf(this.data, size);
         return array;

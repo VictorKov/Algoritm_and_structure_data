@@ -1,4 +1,4 @@
-package Arrays_classes;
+package Arrays;
 
 public interface Array<E> {
 
