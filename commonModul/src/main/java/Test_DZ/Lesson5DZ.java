@@ -16,6 +16,6 @@ public class Lesson5DZ {
         }
 
 
-        return value * extent(value, extent - 1);
+        return value * extent(value, extent - 1); //Покажите, пожалуйста, пример с хвостовой рекурсией
     }
 }
