@@ -1,8 +1,9 @@
-package Test_DZ;
+package Homework.Lesson5;
 
-public class Lesson5DZ {
+public class HomeworkLesson5 {
     public static void main(String[] args) {
         System.out.println(extent(5,5));
+        System.out.println("----");
     }
 
     private static long extent(long value, long extent) {
@@ -17,5 +18,9 @@ public class Lesson5DZ {
 
 
         return value * extent(value, extent - 1); //Покажите, пожалуйста, пример с хвостовой рекурсией
+    }
+
+    private static void exerciseWithBackpack(Object [] arr){
+
     }
 }

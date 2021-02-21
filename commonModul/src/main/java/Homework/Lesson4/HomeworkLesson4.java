@@ -1,11 +1,11 @@
-package Test_DZ;
+package Homework.Lesson4;
 
 
 import Linkedlist.LinkedList;
 import Linkedlist.ListIterator;
 import Linkedlist.SimpleLinkedListImpl;
 
-public class Lesson4DZ {
+public class HomeworkLesson4 {
 
     public static void main(String[] args) {
         LinkedList<Integer> list = new SimpleLinkedListImpl<>();
