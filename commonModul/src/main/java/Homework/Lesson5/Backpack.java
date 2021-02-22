@@ -1,5 +1,6 @@
 package Homework.Lesson5;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Backpack{
@@ -28,7 +29,38 @@ public class Backpack{
         return sum;
     }
 
-    private void
+    private void checkSet(List<Anything> items){
+
+        int sumPrise = calcPrise(items);
+        int sumWeight = calcWeight(items);
+
+        if(sumWeight <= maxWeight && (bestItems == null || sumPrise > bestPrice)){
+            bestItems = items;
+            bestPrice = sumPrise;
+        }
+    }
+
+    public List<Anything> getBestSet(){
+        return bestItems;
+    }
+
+    public void calcBestSet(List<Anything> items){
+        if (items.isEmpty()){
+            return;
+        }
+
+        checkSet(items);
+
+        for (int i = 0; i < items.size(); i++) {
+            List<Anything> copItems = new ArrayList<>(items);
+            copItems.remove(i);
+            calcBestSet(copItems);
+        }
+    }
+
+    public int getBestPrise(){
+        return bestPrice;
+    }
 
     public int getMaxWeight() {
         return maxWeight;
