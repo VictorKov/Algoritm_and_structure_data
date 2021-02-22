@@ -1,18 +1,40 @@
 package Homework.Lesson5;
 
-public class Backpack {
+import java.util.List;
 
-    private int weight;
+public class Backpack{
 
-    public Backpack(int weight) {
-        this.weight = weight;
+    private int maxWeight;
+    private int bestPrice;
+    private List<Anything> bestItems = null;
+
+    public Backpack(int maxWeight) {
+        this.maxWeight = maxWeight;
     }
 
-    public int getWeight() {
-        return weight;
+    private int calcWeight(List<Anything> items){
+        int sum = 0;
+        for (Anything i: items) {
+            sum += i.getWeight();
+        }
+        return sum;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    private int calcPrise(List<Anything> items){
+        int sum = 0;
+        for (Anything i: items) {
+            sum += i.getPrise();
+        }
+        return sum;
+    }
+
+    private void
+
+    public int getMaxWeight() {
+        return maxWeight;
+    }
+
+    public void setMaxWeight(int maxWeight) {
+        this.maxWeight = maxWeight;
     }
 }
