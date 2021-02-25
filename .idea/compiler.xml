@@ -6,12 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="AlSD" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="commonModul" target="15" />
       <module name="Lesson1" target="15" />
+=======
+        <module name="Lesson1" />
+        <module name="commonModul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Common module" target="15" />
+      <module name="Lesson3" target="15" />
+>>>>>>> Lesson5
     </bytecodeTargetLevel>
   </component>
 </project>
